@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://jxligd62p4fe" path="res://addons/kaykit_halloween_bits/Assets/gltf/crypt.gltf" id="1_xj3rj"]
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_nihn8"]
-points = PackedVector3Array(3, 0.3, 4, 3, 0, 4, 3, 0.3, -4, 2.79973, 0.4, 3.79953, -3, 0.3, 4, -3, 0, 4, 3, 0, -4, 2.79973, 0.4, -3.80031, -3, 0.3, -4, -2.80031, 0.4, 3.79953, -3, 0, -4, -2.80031, 0.4, -3.80031)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_uboso"]
+points = PackedVector3Array(3.3, 0, 4.3, 2.99959, 0.3, 3.99947, -3.3, 0, 4.3, 3.3, 0, -4.3, 2.99959, 0.3, -4.00031, 2.79996, 0.4, 3.79996, -3.00023, 0.3, 3.99947, -3.3, 0, -4.3, 2.79996, 0.4, -3.8008, -3.00023, 0.3, -4.00031, -2.80061, 0.4, 3.79996, -2.80061, 0.4, -3.8008)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_8h252"]
 points = PackedVector3Array(-1.75, 0.4, -2.75, 1.75, 0.4, -2.75, -1.75, 0.4, 2.75, -1.75, 4.39961, -2.75, 1.75, 4.39961, -2.75, 1.75, 0.4, 2.75, -1.75, 4.39961, 2.75, 1.75, 4.39961, 2.75)
@@ -32,7 +32,7 @@ points = PackedVector3Array(-0.400059, 7.081, -4, -0.5, 7.09999, -3, -0.5, 7.099
 [node name="Crypt" type="StaticBody3D"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("ConvexPolygonShape3D_nihn8")
+shape = SubResource("ConvexPolygonShape3D_uboso")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
 shape = SubResource("ConvexPolygonShape3D_8h252")
