@@ -37,8 +37,7 @@ _subresources={
 },
 "nodes": {
 "PATH:path_C2": {
-"decomposition/precision": 8,
-"generate/physics": true
+"decomposition/precision": 8
 }
 }
 }
