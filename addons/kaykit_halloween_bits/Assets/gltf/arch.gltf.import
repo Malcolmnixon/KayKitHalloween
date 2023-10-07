@@ -37,8 +37,7 @@ _subresources={
 },
 "nodes": {
 "PATH:arch2": {
-"decomposition/precision": 9,
-"generate/physics": true
+"decomposition/precision": 9
 }
 }
 }

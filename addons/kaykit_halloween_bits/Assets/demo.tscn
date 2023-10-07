@@ -1,21 +1,21 @@
 [gd_scene load_steps=44 format=3 uid="uid://brirk6kdii5q8"]
 
 [ext_resource type="PackedScene" uid="uid://dsp3plafien2o" path="res://addons/kaykit_halloween_bits/Assets/gltf/floor_dirt.gltf" id="1_cv6cx"]
-[ext_resource type="PackedScene" uid="uid://b4asdml32ljvn" path="res://addons/kaykit_halloween_bits/Assets/gltf/floor_dirt_grave.gltf" id="2_30i52"]
+[ext_resource type="PackedScene" uid="uid://bb5shhrcl7wjy" path="res://addons/kaykit_halloween_bits/Assets/scenes/floor_dirt_grave.tscn" id="2_qb2qw"]
 [ext_resource type="PackedScene" uid="uid://dy25bm05ju271" path="res://addons/kaykit_halloween_bits/Assets/gltf/floor_dirt_small.gltf" id="3_xpeow"]
-[ext_resource type="PackedScene" uid="uid://csvkeiqrhypnq" path="res://addons/kaykit_halloween_bits/Assets/gltf/arch_gate.gltf" id="4_6ujdm"]
 [ext_resource type="PackedScene" uid="uid://bkk7fuqgbdg86" path="res://addons/kaykit_halloween_bits/Assets/gltf/path_D.gltf" id="4_he3qb"]
 [ext_resource type="PackedScene" uid="uid://cieif21vp28md" path="res://addons/kaykit_halloween_bits/Assets/gltf/fence.gltf" id="5_an2rg"]
 [ext_resource type="PackedScene" uid="uid://hvf2aao5d2q8" path="res://addons/kaykit_halloween_bits/Assets/gltf/path_A.gltf" id="5_c3yyh"]
 [ext_resource type="PackedScene" uid="uid://npw6ob4uxdpl" path="res://addons/kaykit_halloween_bits/Assets/gltf/fence_broken.gltf" id="6_q3wqy"]
 [ext_resource type="PackedScene" uid="uid://cahmmjrhcu20v" path="res://addons/kaykit_halloween_bits/Assets/gltf/path_C.gltf" id="6_rsyfa"]
 [ext_resource type="PackedScene" uid="uid://c5oew70hvssl0" path="res://addons/kaykit_halloween_bits/Assets/gltf/path_B.gltf" id="7_8p7sj"]
-[ext_resource type="PackedScene" uid="uid://jxligd62p4fe" path="res://addons/kaykit_halloween_bits/Assets/gltf/crypt.gltf" id="7_jh00k"]
 [ext_resource type="PackedScene" uid="uid://c3odkptdi7xoi" path="res://addons/kaykit_halloween_bits/Assets/gltf/tree_pine_yellow_small.gltf" id="8_slt5r"]
+[ext_resource type="PackedScene" uid="uid://dgg40efvs8ob7" path="res://addons/kaykit_halloween_bits/Assets/scenes/arch_gate.tscn" id="8_tun5j"]
 [ext_resource type="PackedScene" uid="uid://tfbm4e0uk4ce" path="res://addons/kaykit_halloween_bits/Assets/gltf/tree_pine_orange_large.gltf" id="8_wgw5q"]
 [ext_resource type="PackedScene" uid="uid://ciergcwx4ean1" path="res://addons/kaykit_halloween_bits/Assets/gltf/tree_pine_orange_medium.gltf" id="9_yik5a"]
 [ext_resource type="PackedScene" uid="uid://ctpcjyqdtse0g" path="res://addons/kaykit_halloween_bits/Assets/gltf/tree_pine_orange_small.gltf" id="10_cjs5f"]
 [ext_resource type="PackedScene" uid="uid://7kgiu5ee6rju" path="res://addons/kaykit_halloween_bits/Assets/gltf/tree_pine_yellow_large.gltf" id="11_fwpr4"]
+[ext_resource type="PackedScene" uid="uid://085j2kfiohld" path="res://addons/kaykit_halloween_bits/Assets/scenes/crypt.tscn" id="11_xsa0a"]
 [ext_resource type="PackedScene" uid="uid://by0nie1n3uq3a" path="res://addons/kaykit_halloween_bits/Assets/gltf/tree_pine_yellow_medium.gltf" id="13_bfmqr"]
 [ext_resource type="PackedScene" uid="uid://bilylu3qve3oi" path="res://addons/kaykit_halloween_bits/Assets/gltf/tree_dead_large.gltf" id="14_mba1m"]
 [ext_resource type="PackedScene" uid="uid://fhjmnphu8nhc" path="res://addons/kaykit_halloween_bits/Assets/gltf/tree_dead_medium.gltf" id="15_l1xtw"]
@@ -188,7 +188,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -8)
 [node name="floor_dirt49" parent="Dirt" instance=ExtResource("1_cv6cx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -12)
 
-[node name="floor_dirt_grave" parent="Dirt" instance=ExtResource("2_30i52")]
+[node name="FloorDirtGrave" parent="Dirt" instance=ExtResource("2_qb2qw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 12)
 
 [node name="floor_dirt_small" parent="Dirt" instance=ExtResource("3_xpeow")]
@@ -285,14 +285,11 @@ transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -9, 0, 0
 
 [node name="Fence" type="Node3D" parent="."]
 
-[node name="arch_gate" parent="Fence" instance=ExtResource("4_6ujdm")]
+[node name="ArchGate" parent="Fence" instance=ExtResource("8_tun5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
 
-[node name="arch_gate2" parent="Fence/arch_gate" index="0"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
-
-[node name="arch_gate_right" parent="Fence/arch_gate/arch_gate2" index="1"]
-transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -1.5, 0, 0)
+[node name="arch_gate_left" parent="Fence/ArchGate/arch_gate2" index="0"]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 1.5, 0, 0)
 
 [node name="fence" parent="Fence" instance=ExtResource("5_an2rg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 8)
@@ -323,7 +320,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -10, 0
 
 [node name="Crypt" type="Node3D" parent="."]
 
-[node name="crypt" parent="Crypt" instance=ExtResource("7_jh00k")]
+[node name="Crypt" parent="Crypt" instance=ExtResource("11_xsa0a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
 
 [node name="Trees" type="Node3D" parent="."]
@@ -474,5 +471,5 @@ transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 9.5, 0, 9.
 [node name="skull" parent="Decorations" instance=ExtResource("43_wwtps")]
 transform = Transform3D(0.906308, 0, 0.422618, 0, 1, 0, -0.422618, 0, 0.906308, -9.6, 0, 10.5)
 
-[editable path="Fence/arch_gate"]
+[editable path="Fence/ArchGate"]
 [editable path="Decorations/coffin"]

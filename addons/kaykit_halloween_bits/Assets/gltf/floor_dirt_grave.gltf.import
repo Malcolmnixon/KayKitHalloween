@@ -37,8 +37,7 @@ _subresources={
 },
 "nodes": {
 "PATH:floor_dirt_grave2": {
-"decomposition/precision": 10,
-"generate/physics": true
+"decomposition/precision": 10
 }
 }
 }
