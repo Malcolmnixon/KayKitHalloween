@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://c2q5phg8w08o" path="res://addons/godot-xr-tools/functions/movement_jump.tscn" id="5_oicun"]
 [ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="6_5uis6"]
 [ext_resource type="Script" path="res://addons/godot-xr-tools/overrides/ground_physics_settings.gd" id="8_bji04"]
-[ext_resource type="PackedScene" uid="uid://brirk6kdii5q8" path="res://addons/kaykit_halloween_bits/Assets/demo.tscn" id="8_yl7ot"]
+[ext_resource type="PackedScene" uid="uid://diadf258e6gvp" path="res://addons/kaykit_halloween_bits/Assets/demo.tscn" id="8_yl7ot"]
 [ext_resource type="Texture2D" uid="uid://dgjimw0ivppam" path="res://assets/ambientcg.com/skyonlyhdri017/SkyOnly.png" id="9_8llbl"]
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="11_i4kg0"]
 
