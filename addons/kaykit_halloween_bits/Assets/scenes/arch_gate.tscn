@@ -35,7 +35,7 @@ points = PackedVector3Array(2.10922, 2.39995, 0.359151, 2.10922, 2.09999, 0.3591
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hxydp"]
 points = PackedVector3Array(2, 2, 0.25, 2, 2, -0.25, 1.5, 2, 0.25, 2, 0, 0.25, 1.5, 1.9998, -0.25, 2, 0, -0.25, 1.5, 0, 0.25, 1.5, 0, -0.25)
 
-[node name="ArchGate" instance=ExtResource("1_2ftx3")]
+[node name="arch_gate" instance=ExtResource("1_2ftx3")]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="arch_gate2/arch_gate_left" index="0"]
 

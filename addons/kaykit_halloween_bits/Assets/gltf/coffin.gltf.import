@@ -37,11 +37,7 @@ _subresources={
 },
 "nodes": {
 "PATH:coffin2": {
-"decomposition/precision": 10,
-"generate/physics": true
-},
-"PATH:coffin2/coffin_lid": {
-"generate/physics": true
+"decomposition/precision": 10
 }
 }
 }
